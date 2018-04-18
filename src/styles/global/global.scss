@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+body{
+  font-family: -apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+textarea {
+  font-family: -apple-system,SF UI Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.main-view{
+  position: relative;
+  z-index: 5000;
+  bottom: 0;
+  left: 0;
+  &-transition {
+    transition: .2s;
+  }
+}
+
+.new-article{
+  transition-delay: .3s;
+  visibility: hidden;
+  bottom: -100vh !important;
+  left: 0 !important;
+  transition: .3s;
+}
